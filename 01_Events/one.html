@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unordered List of Images with IDs</title>
+    <style>
+        ul#image-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li.image-item {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        img.image {
+            width: 150px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Image Gallery with IDs</h2>
+
+<ul id="image-list">
+    <li id="item1" class="image-item">
+        <img id="img1" class="image" src="https://via.placeholder.com/150" alt="Image 1">
+    </li>
+    <li id="item2" class="image-item">
+        <img id="img2" class="image" src="https://via.placeholder.com/150" alt="Image 2">
+    </li>
+    <li id="item3" class="image-item">
+        <img id="img3" class="image" src="https://via.placeholder.com/150" alt="Image 3">
+    </li>
+    <li id="item4" class="image-item">
+        <img id="img4" class="image" src="https://via.placeholder.com/150" alt="Image 4">
+    </li>
+</ul>
+
+</body>
+<script>
+    document.getElementById('item4').addEventListener('click',function(e){
+        e.target.parentNode()
+
+    })
+</script>
+</html>
